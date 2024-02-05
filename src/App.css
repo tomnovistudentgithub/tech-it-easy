@@ -1,0 +1,177 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* dashboard number section - starting to make an ugly color combi, but hey when its nearly carnaval */
+.bought-sold {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.numberBlock {
+  flex-basis: 400px;
+border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+
+}
+.skewedBlock {
+    position: relative;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    transform: skew(-10deg);
+}
+.skewedBlock::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, rgba(200,0,0,0.3) 25%, transparent 35%, transparent 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1) 75%, transparent 75%, transparent);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-size: 40px 40px;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.skewedBlock > * {
+    position: relative;
+    z-index: 2;
+}
+
+.backGroundcolorRed {
+  background-color: rgba(215, 13, 13, 0.8);
+}
+
+.backgroundColorYellow {
+  background-color: rgba(243, 200, 15, 0.9);
+}
+
+.backgroundColorGreen {
+  background-color: rgba(93, 238, 58, 0.9);
+}
+
+.backGroundcolorRed:hover {
+    background-color: rgba(13, 215, 178, 0.8);
+}
+
+.backgroundColorYellow:hover {
+    background-color: rgba(243, 68, 15, 0.9);
+}
+
+.backgroundColorGreen:hover {
+    background-color: rgba(164, 29, 178, 0.9);
+}
+
+/* best selling TV section */
+
+.best-selling-tv-outer {
+  /*background-color: #ffcc99;*/
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*border: dashed 3px black;*/
+    margin: 40px;
+}
+
+.best-selling-tv-inner {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1800px;
+
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+.specifications {
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+}
+
+/* buttons */
+
+.btn-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 25px;
+    border-radius: 10px;
+
+}
+
+button {
+    background-color: blue;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: crimson;
+
+}
+
+/* Other Tv's section */
+.outer-other-tvs-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+.inner-other-tvs-box {
+    display: flex;
+    flex-basis: 1800px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+
+}
+
+.inner-other-tvs-box img {
+    max-width: 600px;
+    max-height: 400px;
+}
+
+.inner-other-tvs-box h2 {
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.options p {
+    margin-right: 20px;
+}
